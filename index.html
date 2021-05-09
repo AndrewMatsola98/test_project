@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Продаж морозива</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#" >
+                    <img src="images/logo.png" class="logo"> </a>
+                    <ul>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Меню</a></li>
+                        <li><a href="#">Що нового</a></li>
+                        <li><a href="#">Зв'язатись з нами</a></li>
+                        <li><a href="#">Контактні дані</a></li>
+                    </ul>
+            </header>
+            <div class="content">
+            <div class="textBox">
+                <h2>Це не просто морозиво.<br>Це <span>Кава з морозивом</span></h2>
+                <p>Київська Міська Ростерія поєднує в собі всі проміжні етапи підготовки кавового зерна з ферм різних куточків світу, щоб кава могла потрапити до вашого горнятка ранкового заряду бадьорості.Ми закуповуємо зелене зерно преміум та спешіалті сортів, обсмажуємо його і продаємо, як гуртом, так і в роздріб.
+                    Один з головних принципів компанії – Працюй з кращими! Роби краще! Це підтверджується співпрацею з тільки перевіреними постачальниками зеленого зерна. Зерно смажимо на ростері зі світовим ім’ям – Giessen.
+                    
+                    Не менш важливу роль в процесі обсмажування грає людина, а саме обсмажчик. Ми піклуємося про якість та стабільність кожної поставки зерна клієнту, тому в кінці кожного дня він капить (дегустує) партію перед відправкою кави на склад, де зерно вилежується, щоб пройти процес дегазації (виходу кисню).
+                    
+                    Маючи багаторічний досвід на кавовому ринку, KYIV CITY ROAST обсмажила вже тисячі тон кави преміум та спешіалті сортів. В нас ви завжди можете купити свіжу каву!
+                    
+                    </p>
+                    <a href="#">Дізнатись більше </a>
+            </div>
+                        <div class="imgBox">
+                            <img src="images/img1.png" class="starbucks">
+                            </div>
+                        </div>
+                <ul class="thumb">
+                    <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); changeCircleColor('#017433')"> </li>
+                    <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); changeCircleColor('#023456')"> </li>
+                    <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); changeCircleColor('#056789')"> </li>
+                </ul>
+                 <ul class="sci" >
+                     <li><a href="#"></a><img src="images/facebook.png"></li>
+                     <li><a href="#"></a><img src="images/instagram.png"></li>
+                     <li><a href="#"></a><img src="images/twitter.png"></li>
+                 </ul>  
+        </section>
+        <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.starbucks').scr=anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle'); 
+                circle.style.background=color;
+            
+        }
+        </script>
+    </body>
+    </html>
